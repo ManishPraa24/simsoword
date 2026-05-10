@@ -72,7 +72,11 @@ def is_similar(
     """
     
     if not isinstance(threshold, float):
-        raise TypeError("Set threshold to a floating-point value between 0.0 and 100.0")
+        if isinstance(threshold, int):
+            threshold = threshold
+        else:
+            raise TypeError("Set threshold to a floating-point value between 0.0 and 100.0")
+
     
     if threshold>100 or threshold<0:
         raise ValueError("Set threshold to a floating-point value between 0.0 and 100.0")
