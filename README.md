@@ -444,57 +444,12 @@ print(result)
 
 ---
 
-# Error Handling
-
----
-
-## Invalid Boundary
-
-```python
-ValueError:
-boundary must be either 'easy' or 'hard'
-```
-
----
-
-## Spaces in Words
-
-```python
-ValueError:
-Spaces are not allowed in words
-```
-
----
-
 ## Invalid Input Types
 
 ```python
 TypeError:
 Input must be a string
 ```
-
----
-
-# Testing
-
-Run all tests using:
-
-```bash
-pytest
-```
-
----
-
-# Current Test Coverage
-
-The package currently tests:
-
-- normalization
-- special character handling
-- boundary validation
-- scoring outputs
-- similarity matching
-- empty string handling
 
 ---
 
