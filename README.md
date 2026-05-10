@@ -505,6 +505,13 @@ See the `LICENSE` file for more information.
 
 Developed by Manish Prajapati.
 
+# Contact
+
+For suggestions, improvements, bug reports, or collaboration opportunities, feel free to reach out.
+
+- Email: mmprajapaty3@gmail.com
+- LinkedIn: [Manish Prajapati](https://www.linkedin.com/in/manish-prajapati-3126a31aa/?utm_source=chatgpt.com)
+
 ---
 
 # Acknowledgements
