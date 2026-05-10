@@ -34,13 +34,17 @@ def get_score(
         Similarity score between 0 and 100
     """
 
+    if not isinstance(normalize, bool):
+        raise TypeError("Set normalize to either True or False")
+    
+    if not isinstance(boundary, str):
+        raise TypeError("boundary value should be a string")
+
     if boundary not in VALID_BOUNDARIES:
         raise ValueError(
             "boundary must be either 'easy' or 'hard'"
         )
     
-    if not isinstance(normalize, bool):
-        raise ValueError("Set normalize to either True or False")
 
     if normalize:
         word1 = normalize_text(word1)
@@ -68,7 +72,7 @@ def is_similar(
     """
     
     if not isinstance(threshold, float):
-        raise ValueError("Set threshold to a floating-point value between 0.0 and 100.0")
+        raise TypeError("Set threshold to a floating-point value between 0.0 and 100.0")
     
     if threshold>100 or threshold<0:
         raise ValueError("Set threshold to a floating-point value between 0.0 and 100.0")
