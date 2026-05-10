@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "simsoword"
 version = "0.1.0"
-description = "A phonetic similarity package for comparing words"
+description = "A phonetic similarity package for comparing words based on how they sound."
+license = {text = "MIT"}
 authors = [
     {name = "Manish Prajapati"}
 ]
